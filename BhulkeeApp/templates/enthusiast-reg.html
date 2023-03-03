@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../static/Registration.css" rel="stylesheet">
+    <link href="../static/ (9).jpeg" rel="icon"> 
+    <title>Bhulkee</title>
+</head>
+<body id="body">
+    <div>
+        <h1 id="heading">Enthusiast Registeration</h1>
+    </div>
+    <div>
+        <img src="../static/images/images (9).jpeg" id="logo">
+    </div>
+    <!-- <form method="post">
+        {% csrf_token %}
+        {{ userform }}
+        <div class="button-div">
+            <button class="button-form submit" value="Submit">Submit</button>
+            <a class="button-form cancel"  href="./main.html" style="text-decoration: none;">Cancel</a>
+        </div>
+    </form> -->
+    <form id="form-body" method="post">
+        {% csrf_token %}
+        {% load widget_tweaks %}
+        <div class="reg-div">
+            <p  class="key">Username:</p>
+            {% render_field userform.username class="reg" type="text" %}
+            <p  class="key">Email:</p>
+            {% render_field userform.email class="reg" type="text" %}
+        </div>
+        <div class="reg-div">
+           <p class="key">Mobile No:</p>
+           {% render_field userform.mobile_no class="reg" type="text" %}
+           <p  class="key">Secret No:</p>
+           {% render_field userform.secret_number class="reg" type="text" %}
+        </div>
+        <div class="reg-div">
+            <p  class="key">Password:</p>
+            {% render_field userform.password class="reg" type="password" %}
+            <p id="retype">Re-type Password:</p>
+            {% render_field userform.password class="reg" type="password" %}
+        </div>
+        <div class="button-div">
+            <button class="button-form submit" value="Submit">Submit</button>
+            <a class="button-form cancel"  href="./main.html" style="text-decoration: none;">Cancel</a>
+        </div>
+    </form>
+</body>
+</html>

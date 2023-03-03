@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../static/login-form.css" rel="stylesheet">
+    <link href="../static/images/images (9).jpeg" rel="icon"> 
+    <title>Bhulkee</title>
+</head>
+<body id="body">
+    <div>
+        <img src="../static/images/images (9).jpeg" id="logo">
+    </div>
+    <div>
+        <form method="post">
+            {% csrf_token %}
+            {% load widget_tweaks %}
+            <div id="form-body">
+                {% render_field Bhulkee_user.username class="login-form-input" type="text" %}
+                {% render_field Bhulkee_user.password class="login-form-input" type="password" %}
+                <button id="login-button">Login</button>
+            </div>
+        </form>
+        <p style="float: right; font-size: 15px; margin-right: 25px; font-family: 'Times New Roman', Times, serif;">Don't have an account? <a href="/main" id="register">Register</a></p>
+    </div>
+</body>
+</html>

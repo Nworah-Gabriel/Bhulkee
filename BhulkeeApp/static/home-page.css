@@ -1,0 +1,191 @@
+#body{
+    margin: 0px;
+    background-color: rgb(249, 249, 249);
+}
+
+#homepage-nav{
+    display: flex;
+    justify-content: space-evenly;
+}
+.page-word{
+    color: white;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-left: 2%;
+    margin-bottom: none;
+    width: 50%;
+    margin: none;
+}
+
+
+@media(max-width:900px){
+    #username{
+        font-size: 33px;
+        color: white;
+        padding: none;
+        height: 100px;
+        margin-left: 5%;
+        margin-bottom: 80px;
+        text-align: left;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+}
+
+@media(min-width:901px){
+    #username{
+        font-size: 50px;
+        color: white;
+        padding: none;
+        height: 100px;
+        margin-left: 5%;
+        margin-bottom: 80px;
+        text-align: left;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+
+    }
+}
+
+#user{
+    margin-top: 100px;
+    padding: none;
+    width: 100%;
+}
+
+#navbar{
+    width: 100px;
+}
+
+@media(min-width:601px){
+    .nav-link{
+        font-size: 18px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: rgb(46, 46, 46);
+        margin-left: 20px;
+        margin-right: 5px;
+        height: 40px;
+        text-decoration: none;
+        padding-bottom: none;
+    }
+}
+
+
+.nav-link:hover{
+    font-size: larger;
+    color: rgb(115, 223, 250);
+}
+#table-header{
+    background-color: rgb(71, 71, 71);
+    color: white;
+}
+#mail-table{
+    border: 1px solid rgb(71, 71, 71);
+    outline: 1px solid rgb(71, 71, 71);
+    font-size: 15px;
+    width: 40%;
+    margin-left: 5%;
+    text-align: center;
+}
+
+tr{
+    background-color:rgb(222, 221, 221);
+}
+
+.get-started{
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color:rgb(33, 210, 33);
+    color: white;
+    border: none;
+    border-radius: 15px;
+    font-size: 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+@media(min-width: 901px){
+
+.get-started{
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color:rgb(33, 210, 33);
+    color: white;
+    border: none;
+    border-radius: 15px;
+    font-size: 20px;
+    text-decoration: none;
+}
+}
+
+@media(min-width: 600px){
+    .nav-link{
+        font-size: 15px;
+        margin-left: 20px;
+        margin-right: 5px;
+        height: 40px;
+        text-decoration: none;
+        padding-bottom: none;
+    }
+}
+
+.reg{
+    border: 1px solid gray;
+    background-color: rgb(240, 244, 248);
+    height: 30px;
+    width: 60%;
+}
+
+.reg:focus{
+    outline: none;
+}
+
+#form-section{
+    margin-left: 10%;
+}
+
+.key{
+    font-size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+.button-div{
+    margin-top: 10px;
+    padding-right: 20px;
+}
+.button-form{
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border-radius: 5px;
+}
+
+.button-form.submit{
+    color: white;
+    background-color: rgb(149, 0, 255);
+    border: 1px solid rgb(149, 0, 255);
+    border: none;
+    margin-right: 10px;
+}
+
+.button-form.cancel{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: rgb(149, 0, 255);
+    border: 1px solid rgb(149, 0, 255);
+}
+#message-body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    padding-top: none;
+    margin-top: none;
+    color: rgb(48, 48, 48);
+    margin-left: 10px;
+    margin-right: 10px;
+}
